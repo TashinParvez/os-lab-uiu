@@ -1,4 +1,4 @@
-# Operating Systems Lab – UIU
+# CSE 4510: Operating Systems Lab – UIU [Summer-252]
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/TashinParvez/os-lab-uiu)
 ![GitHub contributors](https://img.shields.io/github/contributors/TashinParvez/os-lab-uiu)
