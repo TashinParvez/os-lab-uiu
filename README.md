@@ -5,7 +5,6 @@
 
 📘 This repository contains my lab work for the Operating Systems course at United International University.
 
----
 
 ## 📋 Table of Contents
 
@@ -13,7 +12,6 @@
   - [class2.md](./Code+Notes/class2.md)
 - [Practice-Problems/](./Practice-Problems/)
 
----
 
 ## 📂 Structure
 - **Assignments**: All lab assignments with code and explanations.
@@ -32,7 +30,6 @@
 - Prepare for CTs, midterm, and final 
 
 
-
 ## 📖 How to Use This Repository
 
 1. **Clone the repository:**
@@ -48,7 +45,8 @@
     ./outputname
    ```
 5. Refer to the notes before or after running the code for better understanding.
----
+
+
 
 ## 🏡 Contributing
 Contributions are welcome! If you have ideas, suggestions, or resources that could enhance this repository, feel free to submit a pull request or open an issue.
