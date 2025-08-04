@@ -498,7 +498,7 @@ echo Hello, World!
 Hello, World!
 ```
 
-##### Examples:
+###### Example 01:
 
 ```bash
 echo "tashin        parvex"
@@ -511,6 +511,8 @@ echo "tashin        parvex"
 ```
 tashin        parvex
 ```
+
+###### Example 02:
 
 ```bash
 echo tashin    parvez
