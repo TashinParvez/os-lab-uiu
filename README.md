@@ -10,8 +10,8 @@
 
 - [Code+Notes/](./Code+Notes/)
   - [class2.md](./Code+Notes/class2.md)
-- [Practice-Problems/](./Practice-Problems/)
-
+- [Practice/](./Practice)
+  - [Week 2 Assignments.md](./Practice/Week%202%20Assignments.md)
 
 ## 📂 Structure
 - **Assignments**: All lab assignments with code and explanations.
