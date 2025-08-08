@@ -572,6 +572,17 @@ echo "Another line" >> message.txt
 
 - does not Overwrites
 
+### 7. **Exercise using `-e`**
+
+- Create a file `numbers.txt` containing numbers from 1 to 5 (one per line).
+  <p style="color:green; font-weight:bolder">Solve:</p>
+
+  ```bash
+  echo -e "1\n2\n3\n4\n5" > numbers.txt
+  ```
+
+- `-e` enables interpretation of backslash escapes in the echo command (like \n, \t, \\, etc.).
+
 ---
 
 ## 🚨 `head` Command
