@@ -1,7 +1,5 @@
 # Week 3 : Bash Scripting Notes
 
----
-
 <p align="center">
  
   <img src="https://img.shields.io/badge/Part%201%20—%20Variables%20&%20Math-37474f?style=for-the-badge&logo=none" />
