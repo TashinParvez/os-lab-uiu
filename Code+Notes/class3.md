@@ -2,10 +2,15 @@
 
 ---
 
- <div style="text-align:center;">
-    <h2>Part 1</h2>
-    <h5>Just code : <a href="My%20Class%20Code/Class-03/variables_and_math.sh" style="text-decoration:none; color:#1a73e8; font-weight:bold;">Link</a></h5>
-</div>
+<p align="center">
+ 
+  <img src="https://img.shields.io/badge/Part%201%20—%20Variables%20&%20Math-37474f?style=for-the-badge&logo=none" />
+ 
+  <a href="https://github.com/TashinParvez/os-lab-uiu/blob/main/My%20Class%20Code/Class-03/variables_and_math.sh">
+    <img src="https://img.shields.io/badge/Just%20code-💻%20View%20Script-1976d2?style=for-the-badge&logo=none" />
+  </a>
+  
+</p>
 
 ---
 
@@ -213,10 +218,12 @@ echo "Sum of ($num1 + $num2) = $sum"
 
 ---
 
- <div style="text-align:center;">
-    <h2>Part 2 (Bash Conditional Statements Notes)</h2>
-    <h5>Just code : <a href="My%20Class%20Code/Class-03/bash_conditionals.sh" style="text-decoration:none; color:#1a73e8; font-weight:bold;">change it</a></h5>
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Part%202%20—%20Bash%20Conditional%20Statements-37474f?style=for-the-badge&logo=none" />
+  <a href="https://github.com/TashinParvez/os-lab-uiu/blob/main/My%20Class%20Code/Class-03/bash_conditionals.sh">
+    <img src="https://img.shields.io/badge/Just%20code-💻%20View%20Script-1976d2?style=for-the-badge&logo=none" />
+  </a>
+</p>
 
 ---
 
@@ -312,10 +319,9 @@ fi
 
 ---
 
- <div style="text-align:center;">
-    <h2>Part 3 (grep)</h2>
-    <h5>Just code : <a href="My%20Class%20Code/Class-03/bash_conditionals.sh" style="text-decoration:none; color:#1a73e8; font-weight:bold;">change it</a></h5>
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Part%203%20—%20grep-37474f?style=for-the-badge&logo=none" />
+</p>
 
 ---
 
@@ -855,10 +861,13 @@ grep -ie "uiu" -e "bash" week01_notes.txt
 
 ---
 
- <div style="text-align:center;">
-    <h2>Part 4 (Loop)</h2>
-    <h5>Just code : <a href="My%20Class%20Code/Class-03/bash_conditionals.sh" style="text-decoration:none; color:#1a73e8; font-weight:bold;">change it</a></h5>
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Part%204%20—%20Loop-37474f?style=for-the-badge&logo=none" />
+  <a href="https://github.com/TashinParvez/os-lab-uiu/blob/main/My%20Class%20Code/Class-03/loop.sh">
+    <img src="https://img.shields.io/badge/Just%20code-💻%20View%20Script-1976d2?style=for-the-badge&logo=none" />
+  </a>
+</p>
+
 
 ---
 
