@@ -1,0 +1,7 @@
+Hello World
+This is a Bash practice file
+It contains multiple lines
+Some lines have numbers: 123, 456, 789
+Some lines have special words: error, warning, success
+You can search for words like Bash, practice, numbers
+End of file

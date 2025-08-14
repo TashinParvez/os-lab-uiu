@@ -1,27 +1,25 @@
 #!/bin/bash
 
-# for file in *
-# do
-#     echo "$file"
-# done
+#==================== Iterate over all files in the current directory ====================
+
+for file in *
+do
+    echo "$file"
+done
 
 
-
-#Find only text files
-# for file in *.txt
-# do 
-#     echo "$file"
-# done 
-
-
-#C program type loop
-for ((i=0; i<5; i++))
+# #==================== Find only .txt files ====================
+for file in *.txt
 do 
-    echo $i
+    echo "$file"
 done 
 
-# iterate through the command line arguments
-# for i in $@
-# do
-#     echo $i
-# done 
+
+# #==================== C-style numeric loop ====================
+
+for ((i=0; i<5; i++))   #  run while i<5
+do 
+    echo $i
+done
+
+

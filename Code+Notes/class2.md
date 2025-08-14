@@ -98,6 +98,84 @@ This loop creates `file1.txt`, `file2.txt`, and `file3.txt`.
 
 ---
 
+# 🚨 Remove File / Folder
+
+---
+
+- `rm` stands for **remove**.
+- Deletes **files** or **directories** from your system.
+- **Be careful**: Deleted files are usually **not recoverable**.
+
+### Basic Syntax
+
+```bash
+rm [options] filename
+```
+
+- `filename` → The file you want to delete.
+- `[options]` → Optional flags for additional behavior.
+
+---
+
+## ⏩ Examples
+
+### 1️⃣ Delete a single file
+
+```bash
+rm notes.txt
+```
+
+- Removes the file `notes.txt`.
+- No output if successful.
+- If the file doesn’t exist, you’ll get an error:
+
+```
+rm: cannot remove 'notes.txt': No such file or directory
+```
+
+---
+
+### 2️⃣ Delete multiple files
+
+```bash
+rm file1.txt file2.txt file3.txt
+```
+
+- Deletes **all listed files** at once.
+
+---
+
+### 3️⃣ Force deletion (ignore warnings)
+
+```bash
+rm -f notes.txt
+```
+
+- `-f` → force delete **without asking for confirmation**, even if the file is write-protected.
+
+---
+
+### 4️⃣ Delete a directory (non-empty)
+
+```bash
+rm -r folder1
+```
+
+- `-r` → recursive, deletes **all files and subdirectories** inside `folder1`.
+
+---
+
+### 5️⃣ Force + recursive (dangerous!)
+
+```bash
+rm -rf folder1
+```
+
+- Deletes everything **without any confirmation**, even if protected.
+- Use with caution!
+
+---
+
 ## 🚨 **Navigate Between Folders**
 
 ---

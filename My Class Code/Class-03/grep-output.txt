@@ -1,0 +1,2 @@
+Some lines have special words: error, warning, success
+Some lines have special words: error, warning, success
