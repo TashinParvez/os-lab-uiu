@@ -9,7 +9,8 @@
 ## 📋 Table of Contents
 
 - [Code+Notes/](./Code+Notes/)
-  - [class2.md](./Code+Notes/class2.md)
+  - [class2 Note](./Code+Notes/class2.md)
+  - [class3 Note](./Code+Notes/class3.md)
 - [Practice/](./Practice)
   - [Week 2 Assignments.md](./Practice/Week%202%20Assignments.md)
 
