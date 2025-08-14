@@ -11,6 +11,11 @@
 - [Code+Notes/](./Code+Notes/)
   - [class2 Note](./Code+Notes/class2.md)
   - [class3 Note](./Code+Notes/class3.md)
+
+- [My Class Code/](./My%20Class%20Code/)
+  - [class3 Code](./My%20Class%20Code/Class-03)
+    - [Practice QSN](./My%20Class%20Code/Class-03/practice01)
+
 - [Practice/](./Practice)
   - [Week 2 Assignments.md](./Practice/Week%202%20Assignments.md)
 
