@@ -334,7 +334,7 @@ fi
 ## 🚨 Basic Syntax
 
 ```bash
-grep "pattern" filename
+grep "pattern" filename.extension
 ```
 
 - `"pattern"` → The text or regular expression you want to search.
@@ -343,7 +343,7 @@ grep "pattern" filename
 or
 
 ```bash
-grep [options] "pattern" filename
+grep [options] "pattern" filename.extension
 ```
 
 - `[options]` → Optional flags for additional behavior.
