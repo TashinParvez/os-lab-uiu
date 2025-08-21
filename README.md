@@ -2,6 +2,8 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/TashinParvez/os-lab-uiu)
 ![GitHub contributors](https://img.shields.io/github/contributors/TashinParvez/os-lab-uiu)
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=TashinParvez.os-lab-uiu)
+
 
 📘 This repository contains my lab work for the Operating Systems course at United International University.
 
