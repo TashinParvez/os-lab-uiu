@@ -1,3 +1,6 @@
+# =========================  type 1 =========================
+
+
 #!/bin/bash
 
 for file in *.txt
@@ -13,9 +16,7 @@ done
 
 
 
-# ===========
-
-
+# =========================  type 2 =========================
 
 #!/bin/bash
 
@@ -31,4 +32,9 @@ find . -type f -name "*.txt" | while read -r file;
     mv "$file" "$country/$role/$name.txt"
 
 done 
+
+
+
+# ========================= Part 2: Remove empty directories (bottom-up)  =========================
+find . -type d -empty -delete
 

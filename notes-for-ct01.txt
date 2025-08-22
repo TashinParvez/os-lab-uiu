@@ -46,7 +46,7 @@ chmod u-r tasin.txt // change access
 read n   # read / imput
 
 
-============
+========================  if else ========================
 x=2
 
 if [ $x == 21 ]; then     # str compare
@@ -73,7 +73,7 @@ else
     echo "$x doesn't exist"
 fi
 
-============  grep  ============
+========================  grep  ========================
 
 grep "UIU" week01_notes.txt
 
@@ -125,7 +125,11 @@ do
 done
 
 
-=====
+
+========== ARRAY ==========
+
+
+
 
 
 
