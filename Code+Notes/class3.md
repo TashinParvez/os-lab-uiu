@@ -669,7 +669,7 @@ head -n 7 week01_notes.txt | tail -n 5 | grep "Bash"
 ## 4️⃣ Example: Search for a word in last 5 lines
 
 ```bash
-tail -n 5 week01_notes.txt | grep "Bash"
+tail -n 5 week01_notes.txt | grep -w "Bash"
 ```
 
 **Output:**
