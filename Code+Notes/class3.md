@@ -242,6 +242,7 @@ fi
 - `$x` is replaced with the value of variable `x`.
 - `==` tests **equality** for numbers or strings. [In this example it's a string comparison]
 - `fi` → end of the if block
+- `Spacing in [ $x -eq 2 ]` → requires a space after `[` and before `]` for Bash to recognize the condition
 - Output:
   ```
   Value not equals to 2
