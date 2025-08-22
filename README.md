@@ -2,6 +2,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/TashinParvez/os-lab-uiu)
 ![GitHub contributors](https://img.shields.io/github/contributors/TashinParvez/os-lab-uiu)
+![GitHub last commit](https://img.shields.io/github/last-commit/TashinParvez/os-lab-uiu)
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=TashinParvez.os-lab-uiu)
 
 
