@@ -677,7 +677,6 @@ tail -n 5 week01_notes.txt | grep "Bash"
 ```
 6: Loops in Bash
 7: Functions in Bash
-10: Grep, head, and tail
 ```
 
 - `tail -n 5` → last 5 lines of the file
