@@ -90,7 +90,7 @@ touch tashin.txt parvez.c   # 2 diff type of files
 
 ```bash
 for i in {1..3}; do
-  touch "file$i.txt"
+  touch "file$i.txt";
 done
 ```
 
