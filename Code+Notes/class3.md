@@ -281,7 +281,7 @@ fi
 ## 🚨 File Existence Check
 
 ```bash
-x="a.text"
+x="a.txt"
 
 if [ -f $x ]; then  # look here
     echo "$x exists"
@@ -291,17 +291,20 @@ fi
 ```
 
 - `-f` checks if a **file exists and is a regular file**.
-- Output (depends if `a.text` exists):
+- Output (depends if `a.txt` exists):
 
   ```
-  a.text exists
+  a.txt exists
   ```
 
   or
 
   ```
-  a.text doesn't exist
+  a.txt doesn't exist
   ```
+  
+  ### Note
+  - `-f` explanation: "To get the 'exists' result, the file `a.txt` must be in the current directory."
 
 ---
 
