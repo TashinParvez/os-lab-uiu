@@ -117,6 +117,13 @@ do
 done
 
 
-================================
+================ FIND ================
+
+
+find . -type f -name "*.txt" | while read -r file; do
+    echo "Found: $file"
+done
+
+===============================
 
 
