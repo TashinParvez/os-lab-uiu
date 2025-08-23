@@ -1,0 +1,148 @@
+mkdir -p folder9/folder1
+
+pwd 
+
+rm notes.txt
+
+rm -r folder9  // -r → recursive, deletes all files and subdirectories
+
+rm -rf folder1
+
+cd ..  // back one level
+
+cd folder02  
+
+mv old.c   new_folder/new_name.c  // rename and move
+
+mv file.txt  folder1/
+
+cp source_file destination_file  // copy
+
+
+cat file1.txt file2.txt > combined.txt
+
+cat -n file.txt   // Prints content with line numbers
+
+echo '$name'    //  Print ➡ '$name'
+echo "$name"    //  Prints value of the $name variable
+
+
+echo -e "Line1\nLine2"   //  \n for new line
+echo -e "Name:\tTashin"  //  \t for tab
+
+echo "Another line" >> message.txt
+
+
+head -n 20 filename.txt | tail -n 10
+
+chmod u-r tasin.txt // change access
+
+=================================================================
+
+
+
+#!/bin/bash
+
+read n   # read / imput
+
+
+========================  if else ========================
+x=2
+
+if [ $x == 21 ]; then     # str compare
+    echo "Value equals to 2"
+else
+    echo "Value not equals to 2"
+fi
+============
+
+x=2
+if ((x == 2)); then      # int compare
+    echo "equal to 2"
+else
+    echo "not equal to 2"
+fi
+
+============
+
+x="a.text"
+
+if [ -f $x ]; then     # True if file exists
+    echo "$x exists"
+else
+    echo "$x doesn't exist"
+fi
+
+========================  grep  ========================
+
+grep "UIU" week01_notes.txt
+
+grep -i "uiu" week01_notes.txt    # Ignores upper/lower case.
+
+
+grep -n "UIU" week01_notes.txt    # Shows the line number along with the matching line.
+
+grep -r "error" /var/log    # Searches for error in all files inside /var/log folder and subfolders.
+
+
+grep -c "UIU" week01_notes.txt  # Count number of matches
+
+
+grep -v "UIU" week01_notes.txt   # Prints all lines that do NOT contain UIU.
+
+
+grep "Hello" week01_notes.txt >> uiuresults.txt
+
+
+grep -w "UIU" week01_notes.txt   # It searches for the exact word you specify, not as part of another word.
+
+
+grep -e "pattern1" -e "pattern2" filename  # Searches for lines matching pattern1 OR pattern2 (multiple word search)
+
+grep -e "-UIU" week01_notes.txt
+
+============  Loop =============
+
+
+for file in *
+do
+    echo "$file"
+done
+
+=====
+
+for file in *.txt
+do
+    echo "$file"
+done
+
+====
+
+
+for ((i=0; i<5; i++))
+do
+    echo $i
+done
+
+
+
+========== ARRAY ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+

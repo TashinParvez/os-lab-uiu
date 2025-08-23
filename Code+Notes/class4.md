@@ -287,6 +287,167 @@ echo "$result"
 
 ---
 
+# 🚨 Understanding `find` + `while read` in Bash
+
+---
+
+## 🚨 The `find` Command Basics
+
+- `find` is used to **search for files and directories** in Linux.
+
+- General syntax:
+
+  ```bash
+  find [path] [options] [expression]
+  ```
+
+Examples:
+
+```bash
+find . -name "notes.txt"      # Find file named notes.txt in current directory
+find /home -type d            # Find only directories under /home
+find . -type f -size +1M      # Find files larger than 1MB
+```
+
+---
+
+```bash
+find . -type f -name "*.txt" | while read -r file;
+```
+
+#### ✅ Key Takeaways
+
+- `find` = command to search for files/directories, `-type d` → only directories.
+- `.` = start searching in the **current directory**.
+- `-type f` = only match **files** (ignore directories).
+- `-name "*.txt"` = only match files ending with `.txt`. (Pattern)
+- `| while read -r file` → process each result one by one in a loop.
+- Inside loop, `$file` = filename found.
+
+👉 Example: If your folder has:
+
+```
+./a.txt
+./notes/b.txt
+./test/data/c.txt
+```
+
+`find` will print all three paths, one per line.
+
+---
+
+### 🚨 `|` (pipe)
+
+The **pipe** (`|`) takes the output of `find` and sends it into the next command.
+So now every `.txt` filename will be fed line by line into the `while` loop.
+
+---
+
+### 🚨 `while read -r file; do ... done`
+
+- `while ...; do ... done` = loop that keeps running for each input line.
+- `read -r file` = reads **one line at a time** into the variable `file`.
+
+  - `-r` prevents backslashes (`\`) from being treated as escapes.
+
+- Inside the loop, `$file` contains the full path to the `.txt` file.
+
+---
+
+### Example in Action
+
+```bash
+find . -type f -name "*.txt" | while read -r file; do
+    echo "Found: $file"
+done
+```
+
+Output might be:
+
+```
+Found: ./a.txt
+Found: ./notes/b.txt
+Found: ./test/data/c.txt
+```
+
+---
+
+---
+
+## Example 1 – Print All `.txt` Files
+
+```bash
+find . -type f -name "*.txt" | while read -r file;
+do
+    echo "Found: $file"
+done
+```
+
+📂 Suppose directory structure:
+
+```
+./a.txt
+./docs/b.txt
+./notes/c.txt
+```
+
+📜 Output:
+
+```
+Found: ./a.txt
+Found: ./docs/b.txt
+Found: ./notes/c.txt
+```
+
+---
+
+## Example 2 – Count Lines in Each File
+
+```bash
+find . -type f -name "*.txt" | while read -r file;
+do
+    echo "$file has $(wc -l < "$file") lines"
+done
+```
+
+📜 Output:
+
+```
+./a.txt has 10 lines
+./docs/b.txt has 25 lines
+./notes/c.txt has 7 lines
+```
+
+---
+
+## Example 3 – Backup All `.txt` Files
+
+```bash
+find . -type f -name "*.txt" | while read -r file;
+do
+    cp "$file" "$file.bak"
+    echo "Backup created: $file.bak"
+done
+```
+
+📜 Output:
+
+```
+Backup created: ./a.txt.bak
+Backup created: ./docs/b.txt.bak
+Backup created: ./notes/c.txt.bak
+```
+
+---
+
+## 🚨 Why use `find ... | while read` instead of `for file in *.txt`?
+
+- `for file in *.txt` only matches files in **current directory** (not subfolders).
+- `find ... | while read` works **recursively**, handling files in **all subdirectories**.
+- It’s also safer with filenames containing spaces.
+
+---
+
 # 📌📌 Class 04 - Summary Table 📌📌
 
 ---

@@ -198,6 +198,65 @@ cd ..
 
 ---
 
+#### 🚨 Know Which Files and folders are in the current directory
+
+```bash
+ls
+```
+
+- `ls` stands for → `list`
+
+---
+
+## 🚨 Go to another folder:
+
+---
+
+```bash
+cd folder_name   # Go into [folder_name]
+```
+
+```bash
+cd folder1/folder2   # Go into folder1, then inside it go into folder2
+```
+
+### Go to root (home directory):
+
+```bash
+cd ~
+```
+
+##### Example:
+
+```bash
+/home/tashin/project/
+├── folder01/
+├── folder02/
+```
+
+```
+current pos:   /home/tashin/project/folder01/
+Need to Go :   /home/tashin/project/folder02/
+```
+
+```
+Solution
+------------------------
+cd ../folder02
+```
+
+### 🔧 Related `cd` Commands:
+
+| Command          | Meaning                                  |
+| ---------------- | ---------------------------------------- |
+| `cd ..`          | Go one level up                          |
+| `cd ../folder02` | Go up, then into `folder02`              |
+| `cd ../../`      | Go up **two levels**                     |
+| `cd ~/Desktop`   | Go to the Desktop in your home directory |
+| `cd`             | Go to home directory                     |
+
+---
+
 ## 🚨 Know Which Files and folders are in the current directory
 
 ---
@@ -331,55 +390,6 @@ chmod g-w myfile.txt      # Remove write from group
 chmod o=r myfile.txt      # Set only read for others
 chmod a+rw file.txt       # Give read+write to everyone
 ```
-
----
-
-## 🚨 Go to another folder:
-
----
-
-```bash
-cd folder_name   # Go into [folder_name]
-```
-
-```bash
-cd folder1/folder2   # Go into folder1, then inside it go into folder2
-```
-
-### Go to root (home directory):
-
-```bash
-cd ~
-```
-
-##### Example:
-
-```bash
-/home/tashin/project/
-├── folder01/
-├── folder02/
-```
-
-```
-current pos:   /home/tashin/project/folder01/
-Need to Go :   /home/tashin/project/folder02/
-```
-
-```
-Solution
-------------------------
-cd ../folder02
-```
-
-### 🔧 Related `cd` Commands:
-
-| Command          | Meaning                                  |
-| ---------------- | ---------------------------------------- |
-| `cd ..`          | Go one level up                          |
-| `cd ../folder02` | Go up, then into `folder02`              |
-| `cd ../../`      | Go up **two levels**                     |
-| `cd ~/Desktop`   | Go to the Desktop in your home directory |
-| `cd`             | Go to home directory                     |
 
 ---
 
