@@ -1,16 +1,7 @@
 #!/bin/bash
 
-x=0
+cat a.txt b.txt >> c.txt 
 
-for file in *.txt
-do
-    ((x++))
-done
-
-echo $x
-
-
- 
 
 
 

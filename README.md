@@ -14,14 +14,31 @@
 - [Code+Notes/](./Code+Notes/)
   - [class2 Note](./Code+Notes/class2.md)
   - [class3 Note](./Code+Notes/class3.md)
+  - [class3 Note](./Code+Notes/class4.md)
 
 - [My Class Code/](./My%20Class%20Code/)
   - [class3 Code](./My%20Class%20Code/Class-03)
     - [Practice QSN](./My%20Class%20Code/Class-03/practice01)
+    - bash_conditionals
+    - grep
+    - loop
+    - variables and math
+  - [class4 Code](./My%20Class%20Code/Class-04)
+    - Array
+    - Function
+    - Practice Problems on Bash Script
 
 - [Practice/](./Practice)
   - [Week 2 Assignments.md](./Practice/Week%202%20Assignments.md)
   - [Week 3 Assignments.md](./Practice/Week%203%20Assignments.md)
+  - Summer 2022 - offline 1 - solve.sh
+  - multiplication-tablesh
+  - practice-for-Ct01 .md
+
+- [prev-qsn-solve](./prev-qsn-solve)
+  - Make Up Lab Test
+  - Summer25-CT01-Solve
+
  
 
 ## 📂 Structure

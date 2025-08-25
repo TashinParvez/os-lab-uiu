@@ -793,6 +793,124 @@ head -n 120 data.csv | tail -n 21
 
 ---
 
+## 🚨 What is `wc`?
+
+---
+
+- `wc` stands for **Word Count**.
+- It’s a command-line utility that tells you:
+
+  - Number of **lines** (`-l`)
+  - Number of **words** (`-w`)
+  - Number of **characters** (`-m`)
+  - Number of **bytes** (`-c`)
+
+By default, `wc` shows all three together.
+
+```bash
+wc [options] filename
+```
+
+---
+
+## ⏩ Examples
+
+### 1. Count lines, words, and characters
+
+```bash
+wc file.txt
+```
+
+Output example:
+
+```
+  15   100   560 file.txt
+```
+
+- `15` → lines
+- `100` → words
+- `560` → characters (or bytes, depending on system)
+
+---
+
+### 2. Count only lines
+
+```bash
+wc -l file.txt
+```
+
+Example output:
+
+```
+15 file.txt
+```
+
+---
+
+### 3. Count only words
+
+```bash
+wc -w file.txt
+```
+
+---
+
+### 4. Count only characters
+
+```bash
+wc -m file.txt
+```
+
+---
+
+### 5. Count only bytes
+
+```bash
+wc -c file.txt
+```
+
+---
+
+### 6. Multiple files
+
+```bash
+wc -l file1.txt file2.txt
+```
+
+Output:
+
+```
+ 10 file1.txt
+ 25 file2.txt
+ 35 total
+```
+
+---
+
+### 7. With input from another command (pipe)
+
+Count the number of lines in `/etc/passwd`:
+
+```bash
+cat /etc/passwd | wc -l
+```
+
+---
+
+### 8. Count words in a string
+
+```bash
+echo "I love competitive programming" | wc -w
+```
+
+Output:
+
+```
+4
+```
+
+---
+
 ## ✅ Summary Cheat Sheet
 
 ---

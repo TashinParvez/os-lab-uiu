@@ -2,15 +2,15 @@ mkdir -p folder9/folder1
 
 pwd 
 
-rm notes.txt
-
-rm -r folder9  // -r → recursive, deletes all files and subdirectories
-
-rm -rf folder1
-
 cd ..  // back one level
 
 cd folder02  
+
+rm notes.txt  // remove
+
+rm -r folder9  // -r → recursive, deletes all files and subdirectories
+
+rm -rf folder1  // force remove
 
 mv old.c   new_folder/new_name.c  // rename and move
 
@@ -18,8 +18,7 @@ mv file.txt  folder1/
 
 cp source_file destination_file  // copy
 
-
-cat file1.txt file2.txt > combined.txt
+cat file1.txt file2.txt > combined.txt  // concatenation
 
 cat -n file.txt   // Prints content with line numbers
 
@@ -32,13 +31,11 @@ echo -e "Name:\tTashin"  //  \t for tab
 
 echo "Another line" >> message.txt
 
-
 head -n 20 filename.txt | tail -n 10
 
 chmod u-r tasin.txt // change access
 
 =================================================================
-
 
 
 #!/bin/bash
@@ -80,26 +77,21 @@ grep "UIU" week01_notes.txt
 grep -i "uiu" week01_notes.txt    # Ignores upper/lower case.
 
 
-grep -n "UIU" week01_notes.txt    # Shows the line number along with the matching line.
+grep -n "UIU" week01_notes.txt    # Shows line number with the matching line
 
-grep -r "error" /var/log    # Searches for error in all files inside /var/log folder and subfolders.
+grep -r "uiu" /var/log            # inside /var/log folder and subfolders.
 
+grep -c "UIU" week01_notes.txt    # Count number of matches
 
-grep -c "UIU" week01_notes.txt  # Count number of matches
-
-
-grep -v "UIU" week01_notes.txt   # Prints all lines that do NOT contain UIU.
-
+grep -v "UIU" week01_notes.txt    # Prints all lines that do NOT contain UIU.
 
 grep "Hello" week01_notes.txt >> uiuresults.txt
 
+grep -w "UIU" week01_notes.txt   # searches for the exact word, not as part of another word
 
-grep -w "UIU" week01_notes.txt   # It searches for the exact word you specify, not as part of another word.
+grep -e "pattern1" -e "pattern2" filename  # Searche for lines matching pattern1 OR pattern2 (multiple word search)
 
-
-grep -e "pattern1" -e "pattern2" filename  # Searches for lines matching pattern1 OR pattern2 (multiple word search)
-
-grep -e "-UIU" week01_notes.txt
+grep -e "-UIU" week01_notes.txt   # dash search
 
 ============  Loop =============
 
@@ -125,24 +117,13 @@ do
 done
 
 
-
-========== ARRAY ==========
-
+================ FIND ================
 
 
+find . -type f -name "*.txt" | while read -r file; do
+    echo "Found: $file"
+done
 
-
-
-
-
-
-
-
-
-
-
-  
-
-
+===============================
 
 
