@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # =========================== Part 1 ===========================
+#Question: Write a Bash script that creates 10 text files. Depending on the file number:
+#If divisible by 3, write “Virus is a computer malware…”
+#If divisible by 5, write “Worm is a computer malware…”
+#Otherwise, write “This is OS Lab Class…”
 
 for ((i=1; i<=10; i++))
 do
@@ -24,6 +28,7 @@ done
 
 
 # =========================== Part 2 ===========================
+#Question: Extend the previous script to move any file containing the words “Virus” or “Worm” into a folder named Qurantine.
 
 # mkdir Qurantine
 # for file in *.txt
@@ -37,6 +42,7 @@ done
 
 
 # =========================== Part 3 ===========================
+#Question: Modify the script to rename files according to their content: append _virus.txt for files containing “Virus” and _Worm.txt for files containing “Worm”.
 
 # for file in *.txt
 # do

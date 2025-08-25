@@ -90,7 +90,7 @@ touch tashin.txt parvez.c   # 2 diff type of files
 
 ```bash
 for i in {1..3}; do
-  touch "file$i.txt"
+  touch "file$i.txt";
 done
 ```
 
@@ -292,12 +292,12 @@ drwxr-xr-x  2 tashin  tashin   4096 Aug  2 18:00 project
 
 ```
 -rw-r--r-- 1 tashin tashin 1024 Aug 3 10:30 notes.txt
-│          │     │      │     │         │
-│          │     │      │     │         └── 📄 File name
-│          │     │      │     └── 🕐 Last modification date & time
-│          │     │      └── 📏 File size (in bytes)
-│          │     └── 👥 Group name (group ownership)
-│          └── 👤 Owner (user who created or owns the file)
+│             │        │     │        │        │
+│             │        │     │        │        └── 📄 File name
+│             │        │     │        └── 🕐 Last modification date & time
+│             │        │     └── 📏 File size (in bytes)
+│             │        └── 👥 Group name (group ownership)
+│             └── 👤 Owner (user who created or owns the file)
 └── 🔒 File type & permissions
 ```
 

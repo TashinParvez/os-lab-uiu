@@ -242,6 +242,7 @@ fi
 - `$x` is replaced with the value of variable `x`.
 - `==` tests **equality** for numbers or strings. [In this example it's a string comparison]
 - `fi` → end of the if block
+- `Spacing in [ $x -eq 21 ] or [ $x == 21 ]` → requires a space after `[` and before `]` for Bash to recognize the condition
 - Output:
   ```
   Value not equals to 2
@@ -280,7 +281,7 @@ fi
 ## 🚨 File Existence Check
 
 ```bash
-x="a.text"
+x="a.txt"
 
 if [ -f $x ]; then  # look here
     echo "$x exists"
@@ -290,17 +291,20 @@ fi
 ```
 
 - `-f` checks if a **file exists and is a regular file**.
-- Output (depends if `a.text` exists):
+- Output (depends if `a.txt` exists):
 
   ```
-  a.text exists
+  a.txt exists
   ```
 
   or
 
   ```
-  a.text doesn't exist
+  a.txt doesn't exist
   ```
+  
+  ### Note
+  - `-f` explanation: "To get the 'exists' result, the file `a.txt` must be in the current directory."
 
 ---
 
@@ -665,7 +669,7 @@ head -n 7 week01_notes.txt | tail -n 5 | grep "Bash"
 ## 4️⃣ Example: Search for a word in last 5 lines
 
 ```bash
-tail -n 5 week01_notes.txt | grep "Bash"
+tail -n 5 week01_notes.txt | grep -w "Bash"
 ```
 
 **Output:**
@@ -673,7 +677,6 @@ tail -n 5 week01_notes.txt | grep "Bash"
 ```
 6: Loops in Bash
 7: Functions in Bash
-10: Grep, head, and tail
 ```
 
 - `tail -n 5` → last 5 lines of the file
