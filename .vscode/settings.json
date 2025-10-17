@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "*html": "html",
+        "pthread.h": "c"
+    }
+}

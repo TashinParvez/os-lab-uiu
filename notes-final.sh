@@ -121,11 +121,10 @@ result=$(get_result)  # string
 
 
 
-
-
-
 -gt 
 -le 
+
+
 
 
 

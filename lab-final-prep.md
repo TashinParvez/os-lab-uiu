@@ -829,7 +829,9 @@ echo "Today is $(date)"
 
 ---
 
-## 🧠 **Set 1 — Practice Questions (Type 2)**
+## Type 2
+
+---
 
 ---
 
