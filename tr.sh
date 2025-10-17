@@ -1,16 +1,13 @@
+ 
+
+
 #!/bin/bash
 
-var1="Apple" 
+# Extract the 3rd line from users.txt and check if it contains 'admin'
+if head -n 3 users.txt | tail -n 1 | grep -q "admin"; then
+    echo "Admin exists"
+else
+    echo "No admin"
+fi
 
-myfun() {
-    local var1="Banana"  
-    local var2="AAAA"   
-    var3="Cherry"  
-    echo "First fruit: $var1" 
-}
 
-myfun
-
-echo "First fruit: $var1"
-echo "Second fruit: $var2"  # Will not print  
-echo "Third fruit: $var3" 

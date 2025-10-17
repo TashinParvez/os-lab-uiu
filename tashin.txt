@@ -1,0 +1,14 @@
+Assignments
+Code+Notes
+My Class Code
+PraTODOctice
+Practice-Code-Here
+README.md
+else.md
+faculty-given-code
+given-final-qsn.sh
+notes-final.sh
+offlinTODOe-Q2.c
+prev-qsn-solve
+tashTODOin.txt
+tr.sh

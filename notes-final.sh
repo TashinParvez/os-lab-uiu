@@ -13,7 +13,7 @@ ls -1    // separate line
 ls -l    // deails
 
 
-user-group-other
+user-group-other(NGO) or all
 r-w-x
 chmod u-r tasin.txt // change access
 
@@ -124,9 +124,8 @@ result=$(get_result)  # string
 
 
 
-
-
-
+-gt 
+-le 
 
 
 

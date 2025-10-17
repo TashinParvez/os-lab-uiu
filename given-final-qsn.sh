@@ -1,6 +1,7 @@
 # ! /bin/bash
 
 # ====================  9 NO  =======================
+# 9. What is the output of the following code snippet? 
 
 # x="global"
 # function myfunc {
@@ -12,7 +13,9 @@
 
 
 # ====================  10 NO  =======================
- 
+#  Analyze the following Bash script and determine its output: 
+
+
 # stringl="foo"
 # string2="foo "
 
@@ -27,22 +30,22 @@
 
 
 # ====================  21 NO  =======================
+# Write a script that lists all .txt files in the current 
+# directory and counts how many of them contain the word 
+# "TODO".[2.5] 
 
 
-# txt_files=(*.txt)
- 
-# count=0
- 
-# for file in "${txt_files[@]}"; do
-#     if grep -q "TODO" "$file"; then
-#         ((count++))
+
+#!/bin/bash  
+# cnt=0
+# for file in *.txt; do
+#     if grep -c "TODO" "$file"; then
+#         ((cnt++))
 #     fi
 # done
+
+# echo "Number of .txt files containing 'TODO': $cnt"
  
-# echo "Number of .txt files containing 'TODO': $count"
-
-
-
 
 
 # ====================   22  NO  =======================
@@ -54,14 +57,16 @@
 
  
  
-# if [ "$(sed -n '3p' users.txt)" = "admin" ]; then
+#!/bin/bash
+
+# if head -n 3 users.txt | tail -n 1 | grep -q "admin"; then
 #     echo "Admin exists"
 # else
 #     echo "No admin"
 # fi
 
 
-# ====================   22  NO  =======================
+
 
 
 
