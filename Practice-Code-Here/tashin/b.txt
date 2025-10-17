@@ -1,0 +1,10 @@
+1: Introduction to OS Lab
+2: Hello UIU students
+3: Bash scripting basics
+4: Variables and arithmetic
+5: Conditional statements
+6: Loops in Bash
+7: Functions in Bash
+8: File operations
+9: Text processing
+10: Grep, head, and tail
